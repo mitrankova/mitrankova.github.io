@@ -37,6 +37,11 @@ h1,h2,h3 {
 h2 {
    color: var(--neutral1);
 }
+h3 {
+   color: var(--neutral1);
+   font-size: 10px;
+}
+
 
 
 /* *-*-*-*-*-*-*-*-*-*-*-*-*- */
@@ -65,6 +70,27 @@ h2 {
 .flex-right {
    display: flex;
    justify-content: flex-end;
+}
+
+.hyper a:link {
+   color: var(--primary);
+   background-color: transparent;
+   text-decoration: none;
+}
+.hyper a:visited {
+   color: var(--secondary);
+   background-color: transparent;
+   text-decoration: none;
+}
+.hyper a:hover {
+   color: var(--neutral4);
+   background-color: transparent;
+   text-decoration: underline;
+}
+.hyper a:active {
+   color: var(--neutral1);
+   background-color: transparent;
+   text-decoration: underline;
 }
 /* *-*-*-*-*-*-*-*-*-*-*-*-*- */
 
@@ -287,7 +313,7 @@ svg:hover {
       text-align: center;
    }
    .header__intro p {
-      max-width: 66ch;
+      max-width: 166ch;
    }
    .header__intro a {
       align-self: center;
@@ -345,8 +371,9 @@ svg:hover {
 
 .about__content {
    display: grid;
-   grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%;*/
    margin-top: 10rem;
+   padding-bottom: 10rem;
 }
 
 .about__description {
@@ -355,7 +382,7 @@ svg:hover {
 }
 
 .about__description p {
-   max-width: 70rem;
+   width: 100%;
 }
 
 /* about media queries */
@@ -364,6 +391,7 @@ svg:hover {
       grid-template-columns: 100%;
       margin: 3rem 0 3rem 0;
       text-align: center;
+
    }
    .about__description {
       font-size: 1.8rem;
@@ -374,6 +402,212 @@ svg:hover {
    }
 }
 
+/* EDUCATION SECTION */
+.edu {
+   background-color: var(--primary);
+   color: var(--neutral1);
+}
+
+.edu__title {
+   padding-top: 5rem;
+   font-size: 3rem;
+   text-align: center;
+   color: white;
+}
+
+.edu__content {
+   display: grid;
+  /* grid-template-columns: 90% 10%;*/
+   margin-top: 10rem;
+   padding-bottom: 10rem;
+}
+
+.edu__description {
+   font-size: 2rem;
+   line-height: 1.5;
+}
+
+.edu__description p {
+   width: 100%;
+}
+
+.edu span {
+   background-color: #f48024;
+   color: #1d1d1e;
+   border-radius: 10px;
+   -webkit-box-decoration-break: clone;
+   box-decoration-break: clone;
+   padding: 0 5px 0 5px;
+}
+/* about media queries */
+/*
+@media (max-width: 1024px) {
+   .edu__content {
+      grid-template-columns: 100%;
+      margin: 3rem 0 3rem 0;
+      text-align: center;
+   }
+   .edu__description {
+      font-size: 1.8rem;
+      margin: 0 auto;
+   }
+   .edu__img-container {
+      display: none;
+   }
+}*/
+
+/* WORK SECTION */
+.work {
+   background-color: white;
+   color: var(--primary);
+}
+
+.work__title {
+   padding-top: 5rem;
+   font-size: 3rem;
+   text-align: center;
+}
+
+.work__content {
+   display: grid;
+  /* grid-template-columns: 50% 50%;*/
+   margin-top: 10rem;
+}
+
+.work__description {
+   font-size: 2rem;
+   line-height: 1.5;
+}
+
+.work__description p {
+   /*max-width: 70rem;*/
+   width: 100%;
+}
+
+.collapsible {
+   background-color: #777;
+   color: white;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+}
+
+.active, .collapsible:hover {
+   background-color: #555;
+}
+
+.content {
+   padding: 0 18px;
+   display: none;
+   overflow: hidden;
+   background-color: #f1f1f1;
+   font-size: 16px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+.work span {
+   background-color: #f48024;
+   color: #1d1d1e;
+   border-radius: 10px;
+   -webkit-box-decoration-break: clone;
+   box-decoration-break: clone;
+   padding: 0 5px 0 5px;
+}
+
+/* PUBLICATION SECTION */
+.pub {
+   background-color: var(--primary);
+   color: var(--neutral1);
+}
+
+.pub__title {
+   padding-top: 5rem;
+   font-size: 3rem;
+   text-align: center;
+   color: white;
+}
+
+.pub__content {
+   display: grid;
+   grid-template-columns: 90% 10%;
+   margin-top: 10rem;
+   margin-bottom: 10rem;
+}
+
+.pub__description {
+   font-size: 2rem;
+   line-height: 1.5;
+}
+
+.pub__description p {
+   width: 100%;
+}
+
+#publication_table {
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+   width: 50%;
+}
+
+#publication_table td, #publication_table th {
+  /* border: 1px solid #ddd;*/
+   padding: 8px;
+}
+
+
+
+#publication_table th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: var(--primary);
+   color: white;
+}
+
+#publication_table tr:nth-child{background-color: #f2f2f2;}
+
+#publication_table tr:hover {background-color: #ddd;}
+
+.icon_orcid {
+   background: url('./assets/icons/mRCoDBSB.svg');
+   height: 20px;
+   width: 20px;
+   display: block;
+   /* Other styles here */
+}
+
+/* CONFERENCES SECTION */
+.conf {
+   background-color: white;
+   color: var(--primary);
+}
+
+.conf__title {
+   padding-top: 5rem;
+   font-size: 3rem;
+   text-align: center;
+}
+
+.conf__content {
+   display: grid;
+   /* grid-template-columns: 50% 50%;*/
+   margin-top: 10rem;
+}
+
+.conf__description {
+   font-size: 2rem;
+   line-height: 1.5;
+}
+
+.conf__description p {
+   /*max-width: 70rem;*/
+   width: 100%;
+}
 
 
 /* --------------- */
@@ -387,6 +621,7 @@ svg:hover {
    padding-top: 5rem;
    font-size: 3rem;
    text-align: center;
+
 }
 
 .main__project-container {

@@ -1,13 +1,14 @@
-const scrollBtn = document.querySelector('.top-link');
-const scrollCount = document.querySelector('#home');
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-
-window.addEventListener('scroll', () => {
-   const location = scrollCount.getBoundingClientRect();
-
-   if(location.top < -800){
-     scrollBtn.classList.add('show-link');
-   } else {
-      scrollBtn.classList.remove('show-link');
-   }
-});
+for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+         content.style.display = "none";
+      } else {
+         content.style.display = "block";
+      }
+   });
+}
