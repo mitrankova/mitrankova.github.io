@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Leo Garcia Portfolio</title>
+   <title>Iurii Mitrankov Portfolio</title>
    <link rel="preload" href="./css/normalize.css" as="style">
    <link rel="stylesheet" href="./css/normalize.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,12 +16,15 @@
 	<header class="header" id="home">
 		<div class="contenedor">
 			<nav class="header__nav">
-				<h2 class="header__logo">Mariia Mitrankova</h2> <!--logo-->
+				<h2 class="header__logo">Iurii Mitrankov</h2> <!--logo-->
 
 				<div class="header__links-container">
 					<ul class="header__links-list">
 						<li><a href="#about-me">About Me</a></li>
-						<li><a href="#projects">Projects</a></li>
+						<li><a href="#Education">Education</a></li>
+						<li><a href="#Work-experience">Work</a></li>
+						<li><a href="#Publications">Publications</a></li>
+						<li><a href="#Conferences">Conferences</a></li>
 						<li><a href="#contact-me">Contact</a></li>
 					</ul>
 				</div>
@@ -34,13 +37,15 @@
 
 			<section class="header__hero">
 				<section class="header__intro">
-					<h1 class="header__name">Hi, I'm <span id="name-short">Leo</span><span class="typed"></span></h1>
-					<p>A Junior Front-End Developer from El Salvador <span class="flag"></span></p>
-					<a class="btn" href="#projects">My Projects</a>
+					<h1 class="header__name">I'm <span id="name-short">Iurii</span></h1>
+					<p>
+						A research assistant in elementary particles and high energy physics in SPbPU.
+					</p>
+					<a class="btn" href="https://www.overleaf.com/read/mknkbmqghmrs">Download Curriculum Vitae</a>
 				</section>
 				<div class="header__personal">
 					<figure class="header__img-container">
-						<img class="header__img" src="./assets/img/foto-4.jpg" alt="young man picture">
+						<img class="header__img" src="./assets/img/photo.jpg" alt="Iurii Mitrankov's photo">
 					</figure>
 					<section class="header__personal-links">
 						<a href="https://github.com/leogarcialp" target="_blank" title="Github">
@@ -81,54 +86,231 @@
 			<div class="about__content">
 				<div class="about__description">
 					<p>
-						Hello, I'm Leonardo García, a Junior Front-End Developer from El Salvador. Due to the 2020 pandemic, I could no longer continue in collegue, so I had to continue my learning not as a future Computer Science Engineer, but as a programmer.
+						Hello, I'm Iurii Mitrankov, Research Scholar in the area of elementary particle and high energy physics.
 					</p>
 					<p>
-						In college, I saw a little introduction to the basics of web development, which caught my attention and I liked it. So I set out to learn until I mastered it. My goal is to become a long-term Full Stack MERN developer and then jump to mobile apps development.
+						I have studied physics of atomic nuclei and elementary particles physics in the St. Petersburg Polytechnic univercity (SPbPU) in bachelor, master, and PhD programs.
 					</p>
 					<p>
-						I am currently building projects to show in my portfolio and keep learning new things. I am a Computer Technician, I like everything related to hardware. I like video games, rock music and sports, especially football. 
+						During the study, I've entered the PHENIX collaboration at RHIC collider. I did an analysis devoted to phi meson production in Cu+Au and U+U collisions.
+					</p>
+					<p>
+						Besides my own scientific research, I work as a research assistant in SPbPU and give a course of lections to students from 5 to 8 sem on QFT and also practices devoted to high energy physics packages.
+						Under my guideness 5 students of SPbPU are proceeding whith thier analysis for the PHENIX collaboration.
 					</p>
 				</div> <!--about__description-->
-				<div class="about__img-container">
-					<img src="./assets/img/hobbies.jpg" alt="person showing hobbies">
-				</div>
 			</div> <!--.about__content-->
 		</div>
 	</section>
 
-	<main class="main" id="projects">
-		<h2 class="main__title">PROJECTS</h2>
+	<section class="edu" id="Education">
 		<div class="contenedor">
-			<div class="main__project-container">
-			</div> <!--projects container-->
+			<h2 class="edu__title">EDUCATION</h2>
+			<div class="edu__content">
+				<div class="edu__description">
+					<p>
+						<span>2018 - 2022</span>
+					</p>
+					<p>
+						Ph. D. - Elementary particle and high energy physics
+						<br>
+						Peter the Great St.Petersburg Polytechnic University (SPbPU), Russia
+						<br>
+						PhD title:  Measurements of &#981; meson production in Cu+Au and U+U collisions at PHENIX
+						<br>
+						DIPLOMA: Qualification - Researcher. Teacher researcher.
+					</p>
+					<p>
+						<span>2016 - 2018</span>
+					</p>
+					<p>
+						M. Phys. - Elementary particle  and nuclear physics
+						<br>
+						Peter the Great St.Petersburg Polytechnic University (SPbPU), Russia
+						<br>
+						Passed with 4.00/4.00 CGPA.
+					</p>
+					<p>
+						<span>2012 - 2016</span>
+					</p>
+					<p>
+						B. Phys. - Physics
+						<br>
+						Peter the Great St.Petersburg Polytechnic University (SPbPU), Russia
+						<br>
+						Passed with 3.92/4.00 CGPA
+					</p>
+				</div> <!--about__description-->
+			</div> <!--.about__content-->
 		</div>
-	</main>
-
-	<section class="contact" id="contact-me">
-		<h2 class="contact__title">CONTACT</h2>
-
-		<form class="contact__form">
-			<fieldset>
-				<legend>Contact me filling this form</legend>
-				<div>
-					<input class="contact__input" type="text" placeholder="Name">
-				</div>
-				<div>
-					<input class="contact__input" type="email" placeholder="Email">
-				</div>
-				<div>
-					<textarea placeholder="Write your message..."></textarea>	
-				</div>
-				<div class="flex-right">
-					<input class="contact__submit btn" type="submit" value="Send Message">
-				</div>
-			</fieldset>
-		</form>
 	</section>
 
+	<!--         .......................... -->
+
+
+	<section class="work" id="Work-experience">
+		<div class="contenedor">
+			<h2 class="work__title">WORK EXPERIENCE</h2>
+			<div class="work__content">
+				<div class="work__description">
+					<p>
+						<span>Jan 2019 - ongoing</span>
+					</p>
+					<p>
+						Research assistant
+						<br>
+						Peter the Great St.Petersburg Polytechnic University (SPbPU), Russia
+						<br>
+						Myself: measurements of $\phi$ meson production in Cu+Au and U+U collisions.
+						<br>
+						Supervision: measurements of K$^{0*}$(895) mesons in $p$+Al, $p$/$^3$He/Cu+Au and U+U, identified hadrons ($\pi^\pm$, $K^\pm$, $p(\bar{p})$ ) in $p$+Al, $^3$He/Cu+Au $\&$ U+U, thermal $\gamma$ in $p$+Al $\&$ $^3$He+Au...}
+
+
+					</p>
+					<p>
+						<span>Jul 2017 - ongoing</span>
+					</p>
+					<p>
+						Teaching assistant
+						<br>
+						Peter the Great St.Petersburg Polytechnic University (SPbPU), Russia
+						<br>
+						Lectures: NRQM(5 sem.), QFT (6-8 sem.), Introduction to elementary particles (5 sem.).
+						<br>
+						Practices: high energy physics packages (ROOT, Pyhtia, GEANT), radiation measurements.
+						<br>
+						Classbook: Lattice QCD.				</p>
+				</div> <!--about__description-->
+			</div> <!--.about__content-->
+			<button type="button" class="collapsible">See the program of my lectures</button>
+			<div class="content">
+				<p>
+					<ol>
+						<li>Introduction to Elementary particles</li>
+							<ol>
+								<li>Review of standard model</li>
+								<li>Scattering theory</li>
+								<li>Symmetries and Quark Model</li>
+							</ol>
+						<li>Relativistic quantum mechanics</li>
+							<ol>
+								<li>Why is it the way it is?</li>
+								<li>Relativistic wave equations</li>
+							</ol>
+						<li>Why do we need fields?</li>
+							<ol>
+								<li>Causality and multiparticles</li>
+								<li>The Bohm-Aharonov effect</li>
+								<li>Abelian and Non-Abelian FT</li>
+							</ol>
+						<li>Quantum fields</li>
+							<ol>
+								<li>Free fields</li>
+								<li>Interaction fields</li>
+								<li>Fenman diagrams</li>
+								<li>QED</li>
+								<li>Higher Order Corrections</li>
+								<li>Application</li>
+							</ol>
+						<li>Path integral (Functionals)</li>
+							<ol>
+								<li>Path integral in NRQM</li>
+								<li>Path integral in QFT</li>
+								<li>Non-Abelian gauge theories</li>
+								<li>Ghosts, QCD Feynman Rules</li>
+								<li>Ward and ST Identities</li>
+							</ol>
+						<li>Renormalization</li>
+							<ol>
+								<li>Common principles</li>
+								<li>QED</li>
+								<li>QCD and Electroweak</li>
+							</ol>
+						<li>QCD application</li>
+							<ol>
+								<li>Parton model</li>
+								<li>DGLAP</li>
+								<li>Spin structure of nucleons</li>
+								<li>QCD on lattice</li>
+								<li>Low-x physics</li>
+							</ol>
+						<li>Standard Model and beyond</li>
+					</ol>
+				</p>
+			</div>
+		</div>
+	</section>
+	<!--         .......................... -->
+
+	<section class="pub" id="Publications">
+		<div class="contenedor">
+			<h2 class="pub__title">MY PUBLICATIONS</h2>
+			<div class="pub__content">
+				<div class="pub__description">
+					<table id="publication_table">
+						<tr>
+							<th>Total number of articles/proceedings </th>
+							<th>55</th>
+						</tr>
+						<tr>
+							<td>PHENIX and SPD collaboration papers</td>
+							<td>21</td>
+						</tr>
+						<tr>
+							<td>Not collaboration articles</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>Proceedings</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<button type="button" class="collapsible">See the program of my lectures</button>
+			<div class="content">
+				<p>
+					<ul>
+						<li> N.J. Abdulameer et al. (PHENIX collaboration) <a href= https://doi.org/10.1103/PhysRevC.107.014907  target="_blank"> Measurement of φ meson production in Cu+Au collisions at √sN N = 200 GeV and U+U collisions at √sN N = 193 GeV</a>, Phys. Rev. C 107, 014907 (2023).</li>
+						<li> Iu. Mitrankov <a href= https://doi.org/10.1103/PhysRevC.107.014907  target="_blank"> Modification of hadron productions in small systems observed by PHENIX</a>, Nucl. Phys. A 1005, 121878 (2021).</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!--         .......................... -->
+	<!--         .......................... -->
+
+
+	<section class="conf" id="Conferences">
+		<div class="contenedor">
+			<h2 class="conf__title">ATTENDED CONFERENCES</h2>
+			<div class="conf__content">
+				<div class="conf__description">
+					<p>
+					<ul>
+						<li><a class="hyper" href= https://indico.cern.ch/event/792436/  target="_blank"> Quark Matter 2019 - the XXVIIIth International Conference on Ultra-relativistic Nucleus-Nucleus Collisions </a>
+						<br>
+							3-9 November, Wuhan, China
+						<br>
+							Yuri Mitrankov for the PHENIX Collaboration  <a class="hyper"  href= https://indico.cern.ch/event/792436/contributions/3535646/  target="_blank"> “Modification of hadron productions in small systems observed by PHENIX” </a></li>
+						<li><a class="hyper"  href= https://indico.cern.ch/event/634426/  target="_blank"> Hard Probes 2018: International Conference on Hard and Electromagnetic Probes of High-Energy Nuclear Collisions </a>
+						<br>
+							30 September – 5 October 2018, Aix-Les-Bains, Savoie, France
+						<br>
+							Yuri Mitrankov  <a class="hyper"  href=https://indico.cern.ch/event/634426/contributions/3090476/  target="_blank"> “Scaling properties of high pT light hadrons from small to large systems by PHENIX” </a></li>
+
+					</ul>
+					</p>
+				</div> <!--about__description-->
+			</div> <!--.about__content-->
+		</div>
+	</section>
+
+
 	<footer class="footer">
-		<p>&copy; <span id="year"></span> Leonardo Garcia.</p>
+		<p>&copy; <span id="year"></span> Iurii Mitrankov.</p>
 	</footer>
 
 	<!-- scrollBtn arrow -->
@@ -143,6 +325,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	<script src="./js/scrollBtn.js"></script>
+	<script src="./js/collapsible.js"></script>
 	<script src="./js/Typed-script.js"></script>
 	<script src="./js/Date-toggle-name.js"></script>
 	<script src="./js/modal.js"></script>
