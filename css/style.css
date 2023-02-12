@@ -72,22 +72,43 @@ h3 {
    justify-content: flex-end;
 }
 
-.hyper {
-   color: var(--primary);
+.hyperdark {
+   color: white;
    background-color: transparent;
    text-decoration: none;
 }
-.hyper:visited {
+.hyperdark:visited {
    color: var(--secondary);
    background-color: transparent;
    text-decoration: none;
 }
-.hyper:hover {
+.hyperdark:hover {
+   color: var(--neutral1);
+   background-color: transparent;
+   text-decoration: underline;
+}
+.hyperdark:active {
+   color: var(--neutral2);
+   background-color: transparent;
+   text-decoration: underline;
+}
+
+.hyperlight {
+   color: var(--primary);
+   background-color: transparent;
+   text-decoration: none;
+}
+.hyperlight:visited {
+   color: var(--secondary);
+   background-color: transparent;
+   text-decoration: none;
+}
+.hyperlight:hover {
    color: var(--neutral4);
    background-color: transparent;
    text-decoration: underline;
 }
-.hyper:active {
+.hyperlight:active {
    color: var(--neutral1);
    background-color: transparent;
    text-decoration: underline;
@@ -483,7 +504,7 @@ svg:hover {
 }
 
 .active, .collapsible:hover {
-   background-color: #555;
+   background-color: #9CABAB;
 }
 
 .collapsible__content {
@@ -491,6 +512,7 @@ svg:hover {
    display: none;
    overflow: hidden;
    background-color: #f1f1f1;
+   color: var(--primary);
    font-size: 2rem;
    /*font-family: 'Open Sans', sans-serif;*/
 }
@@ -561,7 +583,7 @@ svg:hover {
 
 
 .collapsiblepub {
-   background-color: var(--neutral4);
+   background-color: #555;
    color: white;
    cursor: pointer;
    padding: 2.5rem;
@@ -573,47 +595,86 @@ svg:hover {
 }
 
 .active, .collapsiblepub:hover {
-   background-color: #555;
+   background-color: #555562;
 }
 
 .collapsiblepub__content {
    padding: 0 18px;
    display: none;
    overflow: hidden;
-   background-color: var(--primary);
+   background-color: #26282B;
    color: white;
    font-size: 2rem;
    /*font-family: 'Open Sans', sans-serif;*/
+}
+/*
+.btn {
+   padding: 1.5rem;
+   text-align: center;
+   font-weight: 600;
+   background-color: var(--secondary);
+   color: white;
+   text-decoration: none;
+   border: none;
+   border-radius: 3rem;
+}*/
+.pub__publication-links {
+   display: flex;
+   justify-content: center;
+   gap: 3rem;
+   margin-right: 12rem;
+   margin-top: 6rem;
+}
+
+.pub__publication-links a {
+   text-decoration: none;
 }
 
 
 .icon_orcid {
    background: url("../assets/icons/orcid.svg");
-   height: 50px;
-   width: 50px;
-   display: block;
+   height: 35px;
+   width: 35px;
+   display: flex;
+   justify-content: flex-end;
    /* Other styles here */
+}
+.icon_orcid:hover{
+   cursor: pointer;
+   transform: scale(1.25);
 }
 .icon_scopus {
    background: url("../assets/icons/scopus.svg");
-   height: 50px;
-   width: 50px;
+   height: 35px;
+   width: 35px;
    display: block;
    /* Other styles here */
+}
+.icon_scopus:hover{
+   cursor: pointer;
+   transform: scale(1.25);
 }
 .icon_publons {
    background: url("../assets/icons/publons.svg");
-   height: 50px;
-   width: 50px;
+   height: 35px;
+   width: 35px;
    display: block;
    /* Other styles here */
 }
+.icon_publons:hover{
+   cursor: pointer;
+   transform: scale(1.25);
+}
 .icon_google {
    background: url("../assets/icons/googlescholar.svg");
-   height: 50px;
-   width: 50px;
+   height: 35px;
+   width: 35px;
    display: block;
    /* Other styles here */
+}
+.icon_google:hover{
+   cursor: pointer;
+   transform: scale(1.25);
 }
 
 /* CONFERENCES SECTION */
