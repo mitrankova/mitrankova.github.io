@@ -134,7 +134,7 @@ h3 {
 .header {
    width: 100%;
    min-height: 100vh;
-   background-color: var(--primary);
+   background-color: floralwhite;
 }
 
 .header__nav {
@@ -147,7 +147,7 @@ h3 {
 
 .header__logo {
    font-weight: 800;
-   color: white;
+   color: var(--neutral1);
    letter-spacing: 0.2rem;
 }
 
@@ -164,7 +164,7 @@ h3 {
 }
 
 .header__links-list a {
-   color: var(--neutral2);
+   color: var(--neutral1);
    text-decoration: none;
 }
 
@@ -208,26 +208,27 @@ h3 {
    margin-bottom: 0;
    font-size: 5rem;
    letter-spacing: 0.1rem;
+   color: #ff9999;
 }
-/* JS animation for name ↓ */
-.name {
+/*
+.header__intro span {
    font-family: 'Poppins', sans-serif;
    font-weight: 600;
    font-style: normal;
    color: #ff9999;
-}
+}*/
 
 .header__intro p {
    max-width: 33rem;
    line-height: 1.5;
    font-size: 2.4rem;
-   color: var(--neutral2);
+   color: var(--neutral4);
 }
 
 .flag {
    display: inline-block;
-   width: 5rem;
-   height: 2.2rem;
+   width: 10rem;
+   height: 4.4rem;
    background-image: url('../assets/img/sv-flag2.png');
    background-repeat: no-repeat;
    background-position: center;
@@ -254,7 +255,7 @@ h3 {
    width: 38rem;
    margin: 0;
    padding: 4rem;
-   background-color: var(--dark);
+   /*background-color: var(--dark);*/
 }
 
 .header__img {
@@ -296,7 +297,7 @@ svg:hover {
    }
    .header__toggle {
       display: flex;
-   } 
+   }
    /* styling navbar & links when click ↓ */
    .header__nav {
       flex-direction: column;
@@ -323,7 +324,7 @@ svg:hover {
    /* I had to remove the BEM modifier for a dot */
    .header__links-container.active {
       display: flex;
-   } 
+   }
 
    /** hero section* */
    .header__hero {
@@ -425,15 +426,14 @@ svg:hover {
 
 /* EDUCATION SECTION */
 .edu {
-   background-color: var(--primary);
-   color: var(--neutral1);
+   background-color: white;
+   color: var(--primary);
 }
 
 .edu__title {
    padding-top: 5rem;
    font-size: 3rem;
    text-align: center;
-   color: white;
 }
 
 .edu__content {
@@ -453,7 +453,7 @@ svg:hover {
 }
 
 .edu span {
-   background-color: #f48024;
+   background-color: navajowhite;
    color: #1d1d1e;
    border-radius: 10px;
    -webkit-box-decoration-break: clone;
@@ -492,34 +492,38 @@ svg:hover {
 }
 
 .collapsible {
-   background-color: var(--neutral2);
-   color: var(--primary);
+   background-color: #8AAEF5;
+   color: white;
    cursor: pointer;
    padding: 2.5rem;
    width: 100%;
    border: none;
+
+   border-radius: 3rem;
    text-align: left;
    outline: none;
    font-size: 2.5rem;
 }
 
 .active, .collapsible:hover {
-   background-color: #9CABAB;
+   background-color: #6B87BF;
 }
 
 .collapsible__content {
    padding: 0 18px;
    display: none;
    overflow: hidden;
-   background-color: #f1f1f1;
+   background-color: #D2DEF4;
    color: var(--primary);
    font-size: 2rem;
+   border: none;
+   border-radius: 3rem;
    /*font-family: 'Open Sans', sans-serif;*/
 }
 
 
 .work span {
-   background-color: #f48024;
+   background-color: navajowhite;
    color: #1d1d1e;
    border-radius: 10px;
    -webkit-box-decoration-break: clone;
@@ -529,15 +533,15 @@ svg:hover {
 
 /* PUBLICATION SECTION */
 .pub {
-   background-color: var(--primary);
-   color: var(--neutral1);
+   background-color: white;
+   color: var(--primary);
 }
 
 .pub__title {
    padding-top: 5rem;
    font-size: 3rem;
    text-align: center;
-   color: white;
+
 }
 
 .pub__content {
@@ -583,27 +587,30 @@ svg:hover {
 
 
 .collapsiblepub {
-   background-color: #555;
+   background-color: #8AAEF5;
    color: white;
    cursor: pointer;
    padding: 2.5rem;
    width: 100%;
    border: none;
+   border-radius: 3rem;
    text-align: left;
    outline: none;
    font-size: 2.5rem;
 }
 
 .active, .collapsiblepub:hover {
-   background-color: #555562;
+   background-color: #6B87BF;
 }
 
 .collapsiblepub__content {
    padding: 0 18px;
    display: none;
    overflow: hidden;
-   background-color: #26282B;
-   color: white;
+   background-color: #D2DEF4;
+   border: none;
+   border-radius: 3rem;
+   color: var(--primary);
    font-size: 2rem;
    /*font-family: 'Open Sans', sans-serif;*/
 }
@@ -720,19 +727,19 @@ svg:hover {
 /* CONTACT SECTION */
 .contact {
    min-height: 80vh;
-   background-color: var(--primary);
-   color: white;
+   background-color: floralwhite;
+   color: var(--primary);
 }
 
 .contact__title {
    padding-top: 5rem;
    font-size: 3rem;
-   color: white;
+   color: var(--neutral1);
    text-align: center;
 }
 
 .contact__form {
-   width: min(60rem, 100%);  /* toma el valor mas pequeño | */ 
+   width: min(60rem, 100%);
    margin: 0 auto;
    margin-top: 10rem;
    padding: 2rem;
@@ -755,8 +762,8 @@ fieldset > div {
    width: 100%;
    padding: 1.5rem;
    border: none;
-   background-color: var(--dark);
-   color: white;
+   background-color: #D2DEF4;
+   color: var(--primary);
 }
 
 .contact__form textarea {
@@ -765,8 +772,8 @@ fieldset > div {
    padding: 1.5rem;
    border: none;
    resize: vertical;
-   background-color: var(--dark);
-   color: white;
+   background-color: #D2DEF4;
+   color: var(--primary);
 }
 
 .contact__submit:hover {
@@ -787,8 +794,8 @@ fieldset > div {
 .footer {
    padding: 1.5rem;
    font-size: 1.5rem;
-   background-color: var(--dark);
-   color: white;
+   background-color: #8AAEF5;
+   color: var(--primary);
    text-align: center;
 }
 /* Year must be dynamic ↑ */
