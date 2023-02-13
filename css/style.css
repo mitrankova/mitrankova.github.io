@@ -677,6 +677,23 @@ svg:hover {
    transform: scale(1.25);
 }
 
+@media (max-width: 1024px) {
+   .pub__content {
+      grid-template-columns: 100%;
+      margin: 3rem 0 3rem 0;
+      text-align: center;
+   }
+   .pub__description {
+      font-size: 1.8rem;
+      margin: 0 auto;
+   }
+   .pub__publication-links {
+      /*display: none;*/
+      position: relative;
+      align-items: center;
+   }
+}
+
 /* CONFERENCES SECTION */
 .conf {
    background-color: white;
